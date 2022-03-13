@@ -26,4 +26,11 @@ public class JunitUserReg {
 		Matcher m = p.matcher(email);
 		return m.matches();
 	}
+
+	public boolean MobileNum(String mobile) {
+		regex = "^[1-9]{2} [1-9]{1}[0-9]{9}$";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(mobile);
+		return m.matches();
+	}
 }

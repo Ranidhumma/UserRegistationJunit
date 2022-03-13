@@ -35,4 +35,15 @@ public class JunitTest {
 		// assertTrue(result);
 		assertEquals(true, result);
 	}
+
+	/*
+	 * this Test case is used to check our MobileNumber passes given regex pattern
+	 */
+	@Test
+	public void testMobileNum() {
+
+		boolean result = j.MobileNum("91 9922554488");
+		// assertTrue(result);
+		assertEquals(true, result);
+	}
 }
