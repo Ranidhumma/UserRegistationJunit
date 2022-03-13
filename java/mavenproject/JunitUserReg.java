@@ -13,4 +13,12 @@ public class JunitUserReg {
 		Matcher m = p.matcher(firstName);
 		return m.matches();
 	}
+
+	public boolean LastName(String lastName) {
+
+		regex = "[a-z]{2,}[A-Z]{1}";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(lastName);
+		return m.matches();
+	}
 }

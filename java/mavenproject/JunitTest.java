@@ -10,11 +10,18 @@ public class JunitTest {
 	/*
 	 * this Test case is used to check our first name passes given regex pattern
 	 */
-
 	@Test
 	public void testFirstName() {
 
 		boolean result = j.FirstName("Ranii");
+		// assertTrue(result);
+		assertEquals(true, result);
+	}
+
+	@Test
+	public void testLastName() {
+
+		boolean result = j.LastName("dhummA");
 		// assertTrue(result);
 		assertEquals(true, result);
 	}
