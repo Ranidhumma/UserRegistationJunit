@@ -46,4 +46,17 @@ public class JunitTest {
 		// assertTrue(result);
 		assertEquals(true, result);
 	}
+
+	/*
+	 * this Test case is used to check our minimum 8 character password passes given
+	 * regex pattern
+	 */
+
+	@Test
+	public void testPassword() {
+
+		boolean result = j.Password("xyz45ASR");
+		// assertTrue(result);
+		assertEquals(true, result);
+	}
 }

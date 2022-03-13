@@ -33,4 +33,11 @@ public class JunitUserReg {
 		Matcher m = p.matcher(mobile);
 		return m.matches();
 	}
+
+	public boolean Password(String pass) {
+		regex = "^[A-Za-z0-9]{8,}$";
+		Pattern p = Pattern.compile(regex);
+		Matcher m = p.matcher(pass);
+		return m.matches();
+	}
 }
