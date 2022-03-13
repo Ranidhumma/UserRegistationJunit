@@ -55,7 +55,7 @@ public class JunitTest {
 	@Test
 	public void testPassword() {
 
-		boolean result = j.PasswordAtleastOneUpperCase("xyz1254A");
+		boolean result = j.PasswordAtleastOneUpperCase("xyz124AA");
 		// assertTrue(result);
 		assertEquals(true, result);
 	}

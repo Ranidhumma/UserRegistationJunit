@@ -35,7 +35,7 @@ public class JunitUserReg {
 	}
 
 	public boolean PasswordAtleastOneUpperCase(String pass) {
-		regex = "^[A-Za-z0-9]{8,}$";
+		regex = "^(?=.*[A-Z])(?=.*[a-z]).{8}$";
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(pass);
 		return m.matches();
