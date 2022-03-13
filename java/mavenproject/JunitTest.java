@@ -51,11 +51,11 @@ public class JunitTest {
 	 * this Test case is used to check our minimum 8 character password passes given
 	 * regex pattern
 	 */
-	/* Test case used to test atleast one Upper case */
+	/* Test case used to test atleast one Numeric number */
 	@Test
 	public void testPassword() {
 
-		boolean result = j.PasswordAtleastOneUpperCase("xyz124AA");
+		boolean result = j.PasswordAtleastOneNumericNum("xAz1adhv");
 		// assertTrue(result);
 		assertEquals(true, result);
 	}
