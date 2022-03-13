@@ -14,7 +14,7 @@ public class JunitTest {
 	@Test
 	public void testFirstName() {
 
-		boolean result = j.FirstName("Rani");
+		boolean result = j.FirstName("Ranii");
 		// assertTrue(result);
 		assertEquals(true, result);
 	}
