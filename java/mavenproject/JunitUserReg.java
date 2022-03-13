@@ -34,8 +34,8 @@ public class JunitUserReg {
 		return m.matches();
 	}
 
-	public boolean PasswordAtleastOneNumericNum(String pass) {
-		regex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8}$";
+	public boolean PasswordAtleastOneSpecialChar(String pass) {
+		regex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8}$";
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(pass);
 		return m.matches();

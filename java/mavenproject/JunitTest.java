@@ -49,13 +49,12 @@ public class JunitTest {
 
 	/*
 	 * this Test case is used to check our minimum 8 character password passes given
-	 * regex pattern
+	 * regex pattern /* Test case used to test atleast one Special char
 	 */
-	/* Test case used to test atleast one Numeric number */
 	@Test
 	public void testPassword() {
 
-		boolean result = j.PasswordAtleastOneNumericNum("xAz1adhv");
+		boolean result = j.PasswordAtleastOneSpecialChar("xyx@123A");
 		// assertTrue(result);
 		assertEquals(true, result);
 	}
